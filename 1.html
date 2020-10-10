@@ -18,8 +18,27 @@
     font-size:50px;
     text-align:center
   }
+  #active {
+    color:red;
+    text-decoration:underline
+    /*순서에 영향 최근게 빨강! ㅠㅠ ->id선택자는 우선순위가 더 높음.. tag<class<id*/
+  }
+  .seen {
+    color:gray;
+  }
+
 </style>
 
+
+<font size = "+3">
+<ol>
+<li><a href="1.html" class="seen" id="active">자유</a></li>
+<li><a href="2.html" class="seen ">치킨</a></li>
+<li><a href="3.html">박근수</a></li>
+</ol>
+</font>
+
+<!--
 <font size = "+3">
 <ol>
 <li><a href="1.html" style="color:red;text-decoration:underline">자유</a></li>
@@ -28,7 +47,7 @@
 </ol>
 </font>
 
-<!--
+
 <ol>
 <li><a href="1.html"><font color="red">자유</font></a></li><br>
 <li><a href="2.html"><font color="red">치킨</font></a></li><br>

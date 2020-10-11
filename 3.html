@@ -19,7 +19,7 @@
     color:red;
     text-decoration:underline
   }
-  ol{
+  #grid ol{
     border-right:1px solid gray;
     width:150px;
     font-size:34px;
@@ -30,8 +30,17 @@
   body {
     margin:0
   }
-  .seen {
-    color:gray;
+  #grid {
+    display:grid;
+    grid-template-columns: 241px 1fr;
+    /*height: 1fr*/
+  }
+  #article ul {
+    border:solid gray 2px;
+  }
+  #article{
+    padding-top:10px;
+    padding-left:50px;
   }
 
 </style>
@@ -40,31 +49,29 @@
 
 <body>
 
-<h1><a href="index.html">갈망</a></h1>
+<h1><a href="index.html"  title = "갈망">갈망</a></h1>
 
 
-
-<font size = "+3">
+<div id="grid">
 <ol>
-<li><a href="1.html">자유</a></li>
-<li><a href="2.html">치킨</a></li>
-<li><a href="3.html" id="active">박근수</a></li>
+  <li><a href="1.html" title = "자유" >자유</a></li>
+  <li><a href="2.html" title = "치킨" >치킨</a></li>
+  <li><a href="3.html" title = "박근수" id="active">박근수</a></li>
 </ol>
-</font>
 
 
-<ul>
 
-<a
+<div id="article"><ul>
+
+<li><a
 href="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=%EA%B7%BC%EC%88%98%EB%B0%95"
-target="_blank"
->
-<li>근수박</a></li>
+target="_blank" title="씨없는 근수박">
+근수박</a></li>
 
-<a
+<li><a
 href="https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=%EC%88%98%EB%B0%95%EA%B7%BC"
- title="이두박근 수박근">
-<li>수박근</a></li>
+ target="_blank" title="이두박근 수박근">
+수박근</a></li>
 
 </ul>
 
@@ -86,5 +93,7 @@ href="https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=%EC%8
 장황한 수준의 문장을 구사함이란
  구시대의 일상만큼 뻔하디 뻔하다.
 현학과 전문성으로 둘러싸인 단어가 있다면 금상첨화임이 틀림없다.</p>
+</div>
+</div>
 </body>
 </html>

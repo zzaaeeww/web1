@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-mode="day">
 
 <h1><a href="index.html" title = "갈망">갈망</a></h1>
 
@@ -24,10 +24,18 @@
     document.querySelector('body').dataset.mode ='day';
     document.querySelector('a').style.color ='black';
   ">
-  <input type="button" value="day" onclick="
+  <input type="button" value="night" onclick="
+  if(document.querySelector('body').dataset.mode ==='day';){
+    document.querySelector('body').style.backgroundColor ='black';
+    document.querySelector('body').style.color ='white';
+    document.querySelector('body').dataset.mode ='night';
+    document.querySelector('a').style.color ='white';
+  } else{
     document.querySelector('body').style.backgroundColor ='white';
     document.querySelector('body').style.color ='black';
+    document.querySelector('body').dataset.mode ='day';
     document.querySelector('a').style.color ='black';
+  }
   ">
 
 </div>

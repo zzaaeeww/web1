@@ -10,35 +10,19 @@
 
 <h1><a href="index.html" title = "갈망">갈망</a></h1>
 
-<div id="nightmode">
-  <input type="button" value="night" onclick="
+<input id= "night_day" type="button" value="night" onclick="
+  if(document.querySelector('#night_day').value ==='night'){
     document.querySelector('body').style.backgroundColor ='black';
     document.querySelector('body').style.color ='white';
-    document.querySelector('body').dataset.mode ='night';
-    document.querySelector('a').style.color ='white';
-
-  ">
-  <input type="button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor ='white';
-    document.querySelector('body').style.color ='black';
-    document.querySelector('body').dataset.mode ='day';
-    document.querySelector('a').style.color ='black';
-  ">
-  <input type="button" value="night" onclick="
-  if(document.querySelector('body').dataset.mode ==='day';){
-    document.querySelector('body').style.backgroundColor ='black';
-    document.querySelector('body').style.color ='white';
-    document.querySelector('body').dataset.mode ='night';
+    document.querySelector('#night_day').value='day';
     document.querySelector('a').style.color ='white';
   } else{
     document.querySelector('body').style.backgroundColor ='white';
     document.querySelector('body').style.color ='black';
-    document.querySelector('body').dataset.mode ='day';
+    document.querySelector('#night_day').value='night';
     document.querySelector('a').style.color ='black';
   }
-  ">
-
-</div>
+">
 
 <div id="grid">
 

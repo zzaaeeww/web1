@@ -5,9 +5,10 @@ a {
 h1 {
   font-size:50px;
   text-align:center;
-  border-bottom : gray solid  1px;
+  /*border-bottom : gray solid  1px;*/
   margin:0;
-  padding:30px;
+  padding:20px;
+  padding-top:30px;
 }
 #active {
   color:red;
@@ -27,6 +28,7 @@ body {
 }
 #grid {
   display:grid;
+  border-top:1px solid gray;
   grid-template-columns: 221px 1fr;
   /*height: 1fr*/
 }
@@ -41,8 +43,9 @@ body {
 .firstpar{
   margin-bottom:30px;
 }
-#nightmode{
-  padding-left:23px;
+#night_day{
+  margin-bottom:10px;
+  margin-left:23px;
 }
 @media(max-width:800px){
   h1 {

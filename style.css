@@ -41,7 +41,9 @@ body {
 .firstpar{
   margin-bottom:30px;
 }
-
+#nightmode{
+  padding-left:23px;
+}
 @media(max-width:800px){
   h1 {
     font-size:50px;

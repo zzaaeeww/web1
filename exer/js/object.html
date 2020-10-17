@@ -5,6 +5,41 @@
     <title></title>
   </head>
   <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      var coworkers={
+        "programmer":"zw",
+        "designer":"gs",
+        "showAll2" : function(){
+          for (var key in this){
+            document.write(key+' :바보 '+this[key]+'<br>');
+          }
+        }
+      };//객체는 중괄호
+      document.write("programmer:"+coworkers.programmer+"<br>");
+      document.write("designer:"+coworkers["designer"]+"<br>");
+      coworkers.bookkeeper ="js";
+      document.write("bookkeeper:"+coworkers.bookkeeper+"<br>");
+      coworkers["data scientist"]="mj";
+      document.write("data scientist:"+coworkers["data scientist"]+"<br>");
+    </script>
+    <h2>iterate</h2>
+    <script>
+      for (var key in coworkers){
+        document.write(key+' : '+coworkers[key]+'<br>');
+      }
+    </script>
+    <h2>Property & Methods</h2>
+    <script>
+      coworkers.showAll = function(){
+        for (var key in this){
+          document.write(key+' : '+this[key]+'<br>');
+        }
+      }
+      coworkers.showAll();
+      coworkers.showAll2();
 
+    </script>
   </body>
 </html>

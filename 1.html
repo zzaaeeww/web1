@@ -13,17 +13,24 @@
 <input id= "night_day" type="button" value="night" onclick="
   var target = document.querySelector('body');
   var links = document.querySelectorAll('a');
-  
+  var active = document.querySelector('#active');
+
   if(this.value ==='night'){
     target.style.backgroundColor ='black';
     target.style.color ='white';
     this.value='day';
-    document.querySelector('a').style.color ='white';
+    for(let i=0;i<links.length;i++){
+      links[i].style.color ='white';
+    }
+    active.style.color = 'lightcoral';
   } else{
     target.style.backgroundColor ='white';
     target.style.color ='black';
     this.value='night';
-    document.querySelector('a').style.color ='black';
+    for(let i=0;i<links.length;i++){
+      links[i].style.color ='black';
+    }
+    active.style.color = 'red';
   }
 ">
 

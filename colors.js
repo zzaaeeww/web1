@@ -15,10 +15,14 @@
 
   }
 
-  function activeSetColor(color){
-    var active = document.querySelector('#active');
-    active.style.color = color;
+  var Active={
+    setColor : function (color){
+      var active = document.querySelector('#active');
+      active.style.color = color;
+
+    }
   }
+
 
   var Body={
     setColor : function (color){
@@ -36,12 +40,12 @@
       Body.setColor('white');
       self.value='day';
       Links.setColor('white');
-      activeSetColor('lightcoral');
+      Active.setColor('lightcoral');
     } else{
       Body.setBGColor('white');
       Body.setColor('black');
       self.value='night';
       Links.setColor('black');
-      activeSetColor('red');
+      Active.setColor('red');
     }
   }

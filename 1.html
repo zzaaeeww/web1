@@ -4,41 +4,7 @@
   <title>수박보다 맛있는 근수박</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <script>
-  function linkSetColor(color){
-    var links = document.querySelectorAll('a');
-    for(let i=0;i<links.length;i++){
-      links[i].style.color=color;
-    }
-  }
-  function activeSetColor(color){
-    var active = document.querySelector('#active');
-    active.style.color = color;
-  }
-  function setBodyColor(color){
-    document.querySelector('body').style.color =color;
-  }
-  function bodySetBGColor(color){
-    document.querySelector('body').style.backgroundColor =color;
-  }
-  function nightDayHandler(self){
-    var target = document.querySelector('body');
-    if(self.value ==='night'){
-      bodySetBGColor('black');
-      setBodyColor('white');
-      self.value='day';
-      linkSetColor('white');
-      activeSetColor('lightcoral');
-    } else{
-      bodySetBGColor('white');
-      setBodyColor('black');
-      self.value='night';
-      linkSetColor('black');
-      activeSetColor('red');
-    }
-  }
-
-  </script>
+  <script src="colors.js"></script>
 </head>
 
 <body>

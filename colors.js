@@ -1,17 +1,23 @@
 
   var Links ={
-    links : document.querySelectorAll('a'),//해결못함, 밑에서 변수 안만들고 이렇게 하고 싶은데...
-    setColor : function(color){
-      var links = document.querySelectorAll('a');
-      for(let i=0;i<links.length;i++){
-        links[i].style.color=color;
-      }
 
+    //jquery using (same with under)
+
+
+    // links : document.querySelectorAll('a'),//해결못함, 밑에서 변수 안만들고 이렇게 하고 싶은데...
+     setColor : function(color){
+       $('a').css('color',color);
+
+    //   var links = document.querySelectorAll('a');
+    //   for(let i=0;i<links.length;i++){
+    //     links[i].style.color=color;
+    //   }
+        }
 
       /*for(let i =0 ;i<links.length;i++){
         document.write(links[i]+"sss"+"<br>")
       }*/
-    }
+
 
   }
 
@@ -27,10 +33,13 @@
   var Body={
     setColor : function (color){
       document.querySelector('body').style.color =color;
+      //$('body').css('color',color);  //with jquery
     },
     setBGColor : function (color){
       document.querySelector('body').style.backgroundColor =color;
+      //$('body').css('backgroundColor',color);  //with jquery
     }
+
   }
 
   function nightDayHandler(self){
